@@ -15,7 +15,7 @@ provider "aws" {
 
 resource "aws_instance" "app_server" {
   ami                     = var.ami_id
-  instance_type           = "t2.micro"
+  instance_type           = var.instance_type_name
   vpc_security_group_ids  = var.vpc_security
   key_name                = var.key_name_id
   subnet_id               = var.subnet_id

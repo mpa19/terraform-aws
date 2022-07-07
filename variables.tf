@@ -3,6 +3,11 @@ variable "ami_id" {
 	default = "ami-0d71ea30463e0ff8d"
 }
 
+variable "instance_type_name" {
+	description = "Name instance type"
+	default = "t2.micro"
+}
+
 variable "vpc_security" {
 	description = "Security groups ids"
 	default = ["sg-0ad91972ad61e4b70"]
@@ -15,7 +20,7 @@ variable "key_name_id" {
 
 variable "subnet_id" {
 	description = "Subnet id"
-	default = ["sg-0ad91972ad61e4b70"]
+	default = "subnet-010e2c605995e8c9d"
 }
 
 variable "tag_name" {
