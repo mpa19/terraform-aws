@@ -1,3 +1,8 @@
+variable "region_name" {
+	description = "Region name for AWS EC2"
+	default = "eu-west-1"
+}
+
 variable "ami_id" {
 	description = "Ami id for AWS EC2"
 	default = "ami-0d71ea30463e0ff8d"
